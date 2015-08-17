@@ -6,15 +6,15 @@
 [![downloads](https://img.shields.io/npm/dm/git-commiters.svg)](https://npmjs.org/package/git-commiters)
 [![license](https://img.shields.io/npm/l/git-commiters.svg)](https://npmjs.org/package/git-commiters)
 
-A [_Node.js_][nodejs] function module providing commiters stats for your git repository.
+A [_Node.js_][nodejs] function module providing committers stats for your git repository.
 
-Statistical summary of various infomation about git commiter.
+Statistical summary of various infomation about git committer.
 
-* list of the commiters
-* count of the commiters
-* count of commits via commiters
-* count of insertions via commiters
-* count of deletions via commiters
+* list of the committers
+* count of the committers
+* count of commits via committers
+* count of insertions via committers
+* count of deletions via committers
 
 
 ## Usage
@@ -35,7 +35,7 @@ gitCommiters('.', function(err, result){
 
     gitCommiters = require('git-commiters')
 
-* gitCommiters(options, callback): asynchronous get the stats infomation of the git commiters
+* gitCommiters(options, callback): asynchronous get the stats infomation of the git committers
   * options *(String|Object)*: the git's working directory if it's string.
     * cwd *(String)*: the git's working directory.
     * gitDir *(String)*: the git directory(`.git`).
