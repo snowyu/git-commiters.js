@@ -43,6 +43,12 @@ gitCommiters('.', function(err, result){
       It defaults to `HEAD`. You can specify a branch too. More details to see [gitrevisions](http://git-scm.com/docs/gitrevisions)
     * path *(String)*: list commiters only for the specified path(file). defaults to all.
 
+[semver]: http://semver.org
+[mocha]: http://visionmedia.github.com/mocha/
+[chai]: http://chaijs.com
+[sinon]: http://sinonjs.org
+[nodejs]: http://nodejs.org
+
 ## License
 
 MIT
