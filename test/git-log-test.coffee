@@ -12,6 +12,9 @@ gitLog        = require('../src/git-log')
 gitDir        = __dirname + '/fixtures/git.git'
 
 describe 'git-log', ->
+  it 'should throw error for invalid git dir', ->
+    should.throw gitLog.bind(null, gitDir: 'nosuchDir')
+
   it 'can get git log via defaults', (done) ->
     gitLog gitDir:gitDir, (err, result) ->
       expect(err).to.not.exist
