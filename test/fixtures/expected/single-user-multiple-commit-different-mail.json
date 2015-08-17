@@ -1,0 +1,16 @@
+[
+  {
+    "commits": 6,
+    "email": "john@doe.com",
+    "name": "John Doe",
+    "insertions": 10,
+    "deletions": 15
+  },
+  {
+    "commits": 4,
+    "email": "john@doe.org",
+    "name": "John Doe",
+    "insertions": 6,
+    "deletions": 9
+  }
+]
