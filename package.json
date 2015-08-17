@@ -1,7 +1,7 @@
 {
   "name": "git-commiters",
   "description": "Statistical summary of various infomation about git commiter.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/snowyu/git-commiters.js",
   "repository": {
     "type": "git",
