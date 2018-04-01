@@ -44,7 +44,7 @@ gitCommiters('.', function(err, result){
     * path *(String)*: list commiters only for the specified path(file). defaults to all.
 
 [semver]: http://semver.org
-[mocha]: http://visionmedia.github.com/mocha/
+[mocha]: http://mochajs.org/
 [chai]: http://chaijs.com
 [sinon]: http://sinonjs.org
 [nodejs]: http://nodejs.org
