@@ -11,6 +11,12 @@ module.exports = (aOptions, done)->
   if aOptions
     revRange  = aOptions.revisionRange
     path      = aOptions.path
+  if typeof revRange == 'string'
+    revRange = revRange.replace /['"]+/g, ''
+    if revRange
+      revRange = '"' + revRange + '"'
+  else
+    revRange = null
 
   gitCmd    = 'git'
   gitDir    = isRepositoryExists aOptions
