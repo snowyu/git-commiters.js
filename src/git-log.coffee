@@ -1,6 +1,8 @@
 exec                = require('child_process').exec
 isRepositoryExists  = require './is-repository-exists'
 isString            = require 'util-ex/lib/is/type/string'
+existsSync          = require('fs').existsSync
+joinPath            = require('path').join
 
 'use strict'
 
@@ -23,7 +25,7 @@ module.exports = (aOptions, done)->
   gitCmd   += " --git-dir='#{gitDir}'" if gitDir
   gitCmd   += " log #{gitOptions}"
   gitCmd   += " #{revRange}" if revRange
-  gitCmd   += " -- #{path}" if path
+  gitCmd   += " -- #{path}" if path and existsSync(joinPath(gitDir, path))
 
   exec gitCmd, aOptions, (err, stdout) ->
     done err, stdout
